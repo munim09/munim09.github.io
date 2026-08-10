@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-ink: #0b1220;
+  --color-panel: #101b2d;
+  --color-panel-alt: #0e1726;
+  --color-line: #223047;
+  --color-copper: #e8a33d;
+  --color-copper-dim: #b97a2a;
+  --color-teal: #4fd1c5;
+  --color-text: #edeff3;
+  --color-muted: #93a1b8;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-ink);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--color-copper);
+    color: var(--color-ink);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-copper);
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+  .grid-bg {
+    background-image:
+      linear-gradient(to right, var(--color-line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--color-line) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+  .text-copper {
+    color: var(--color-copper);
+  }
+  .text-teal {
+    color: var(--color-teal);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
