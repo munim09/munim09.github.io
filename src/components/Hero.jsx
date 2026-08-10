@@ -69,7 +69,7 @@ export default function Hero() {
                         {profile.tagline}
                     </p>
 
-                    <div className="mt-8 flex flex-wrap items-center gap-4">
+                    {/* <div className="mt-8 flex flex-wrap items-center gap-4">
                         <a
                             href={profile.resumeFile}
                             download
@@ -97,7 +97,7 @@ export default function Hero() {
                         >
                             View Projects
                         </a>
-                    </div>
+                    </div> */}
 
                     <div className="mt-8">
                         <SocialLinks />
