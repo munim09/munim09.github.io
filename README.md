@@ -63,6 +63,14 @@ This portfolio is deployed to GitHub Pages at [https://munim09.github.io](https:
 7. **Visit the live site**
    Wait 1–2 minutes, then check [https://munim09.github.io](https://munim09.github.io).
 
+## Git
+
+```
+git add .
+git commit - m "Commit message"
+git push -u origin main
+```
+
 ## Things to personalize before shipping
 
 - `public/avatar-placeholder.svg` — replace with your real photo (`public/photo.jpg`) and update the `src` in `src/components/Hero.tsx`.
