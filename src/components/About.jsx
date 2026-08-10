@@ -48,7 +48,8 @@ export default function About() {
                                 <span className="text-copper">
                                     currently_exploring
                                 </span>{" "}
-                                = "Prisma, Next.js, serverless PostgreSQL"
+                                = "Typescript, Nodejs, Express, Prisma, Next.js,
+                                PostgreSQL"
                             </li>
                         </ul>
                     </div>

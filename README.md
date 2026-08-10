@@ -63,12 +63,14 @@ This portfolio is deployed to GitHub Pages at [https://munim09.github.io](https:
 7. **Visit the live site**
    Wait 1–2 minutes, then check [https://munim09.github.io](https://munim09.github.io).
 
-## Git
+## Git & Re-deploy
 
 ```
 git add .
 git commit - m "Commit message"
 git push -u origin main
+
+npm run deploy
 ```
 
 ## Things to personalize before shipping
