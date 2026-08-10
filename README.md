@@ -18,12 +18,50 @@ npm run build
 npm run preview
 ```
 
-## Deploy to Vercel
+## Deployment
 
-1. Push this folder to a GitHub repo.
-2. Go to https://vercel.com/new and import the repo.
-3. Framework preset: **Vite** (auto-detected). Build command `npm run build`, output directory `dist` (defaults are already correct).
-4. Deploy. `vercel.json` is already included so client-side routes (e.g. `/projects/erp-business-platform`) work correctly on refresh.
+This portfolio is deployed to GitHub Pages at [https://munim09.github.io](https://munim09.github.io).
+
+### Steps to deploy
+
+1. **Create the repository**
+   Create a new public GitHub repository named exactly `munim09.github.io`. This special naming tells GitHub to serve it as a user site at the root domain.
+
+2. **Push the code**
+```bash
+   git remote add origin https://github.com/munim09/munim09.github.io.git
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git push -u origin main
+```
+
+3. **Install gh-pages**
+```bash
+   npm install --save-dev gh-pages
+```
+
+4. **Add deploy scripts**
+   In `package.json`, add:
+```json
+   "scripts": {
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d dist"
+   }
+```
+   > Note: No need to set a `base` in `vite.config.js` — this is a user page, so it's served from the root by default.
+
+5. **Deploy**
+```bash
+   npm run deploy
+```
+   This builds the app and pushes the `dist/` folder to the `gh-pages` branch automatically.
+
+6. **Set the Pages source**
+   Go to **Repo Settings → Pages** → set **Source** to `Deploy from a branch` → select the `gh-pages` branch, `/ (root)` folder → **Save**.
+
+7. **Visit the live site**
+   Wait 1–2 minutes, then check [https://munim09.github.io](https://munim09.github.io).
 
 ## Things to personalize before shipping
 
