@@ -36,17 +36,17 @@ export const projects = [
         slug: "gear-rental-platform",
         name: "Gear Rental Platform",
         summary:
-            "A rental marketplace backend with a full ERD, seeded database, and a booking-based payment flow.",
+            "A rental marketplace backend with a full ERD, seeded database, and Stripe-powered payments.",
         image: gearRentalSvg,
         stack: ["Node.js", "TypeScript", "Prisma 7", "PostgreSQL"],
         description:
-            "A backend for a gear rental marketplace — think cameras, tools, and outdoor equipment rented peer-to-peer. I designed the full entity-relationship model, wrote the migration SQL and a seed script, and documented the schema for future contributors. The API handles listings, availability, bookings, and deposit tracking, with a reconciliation job that keeps booking and payment-status records consistent.",
+            "A backend for a gear rental marketplace — think cameras, tools, and outdoor equipment rented peer-to-peer. I designed the full entity-relationship model, wrote the migration SQL and a seed script, and documented the schema for future contributors. Payments run through Stripe: I evaluated Checkout Sessions against PaymentIntents for the rental-deposit use case, wired up webhook handling with express.raw(), tested locally with the Stripe CLI, and built a PostgreSQL-backed reconciliation cron job to catch missed or delayed webhook events.",
         live: "#",
         github: "https://github.com/munim09",
         challenges: [
-            "Designing a deposit and refund model that works across different rental durations.",
-            "Preventing double-bookings when multiple users try to reserve the same item concurrently.",
-            "Designing a reconciliation job to catch payment-status updates that arrive late or out of order.",
+            "Choosing between Stripe Checkout Sessions and PaymentIntents for rental deposits and refunds.",
+            "Handling Stripe webhooks reliably with express.raw() without breaking JSON parsing elsewhere in the app.",
+            "Designing a reconciliation job to catch payment events that arrive late or out of order.",
         ],
         improvements: [
             "Add a dispute/damage-deposit workflow with partial refunds.",
@@ -54,7 +54,6 @@ export const projects = [
             "Add real-time availability updates for concurrent booking attempts.",
         ],
     },
-    ,
     {
         slug: "devpulse",
         name: "DevPulse",

@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { projects } from "../data/projects";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import ProjectImage from "../components/ProjectImage";
 
 export default function ProjectDetail() {
   const { slug } = useParams();
@@ -40,8 +41,8 @@ export default function ProjectDetail() {
             Back to all projects
           </Link>
 
-          <div className="mt-6 rounded-lg overflow-hidden border border-line">
-            <img src={project.image} alt={`${project.name} illustration`} className="w-full h-auto" />
+          <div className="mt-6 aspect-[16/10] rounded-lg overflow-hidden border border-line">
+            <ProjectImage image={project.image} alt={`${project.name} illustration`} />
           </div>
 
           <h1 className="font-display font-semibold text-3xl sm:text-4xl mt-8">{project.name}</h1>
@@ -59,7 +60,7 @@ export default function ProjectDetail() {
               href={project.live}
               target="_blank"
               rel="noreferrer noopener"
-              className="inline-flex items-center gap-2 rounded-md bg-copper text-ink font-medium px-5 py-2.5 hover:bg-copper-dim transition-colors"
+              className="inline-flex items-center gap-2 rounded-md bg-copper text-on-accent font-medium px-5 py-2.5 hover:bg-copper-dim transition-colors"
             >
               Live Project
             </a>

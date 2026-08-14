@@ -73,7 +73,7 @@ export default function Hero() {
                         <a
                             href={profile.resumeFile}
                             download
-                            className="inline-flex items-center gap-2 rounded-md bg-copper text-ink font-medium px-5 py-3 hover:bg-copper-dim transition-colors"
+                            className="inline-flex items-center gap-2 rounded-md bg-copper text-on-accent font-medium px-5 py-3 hover:bg-copper-dim transition-colors"
                         >
                             Download Resume
                             <svg

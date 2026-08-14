@@ -1,0 +1,15 @@
+<svg viewBox="0 0 480 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="480" height="300" fill="var(--svg-bg)"/>
+  <g stroke="var(--svg-line)" stroke-width="1">
+    <line x1="0" y1="100" x2="480" y2="100"/>
+    <line x1="0" y1="200" x2="480" y2="200"/>
+    <line x1="160" y1="0" x2="160" y2="300"/>
+    <line x1="320" y1="0" x2="320" y2="300"/>
+  </g>
+  <polyline points="40,150 100,150 130,90 170,210 210,150 260,150 290,120 320,180 350,150 440,150"
+    fill="none" stroke="var(--copper)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="130" cy="90" r="5" fill="var(--teal)"/>
+  <circle cx="170" cy="210" r="5" fill="var(--teal)"/>
+  <circle cx="290" cy="120" r="5" fill="var(--teal)"/>
+  <circle cx="320" cy="180" r="5" fill="var(--teal)"/>
+</svg>

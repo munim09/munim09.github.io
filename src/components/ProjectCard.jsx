@@ -1,14 +1,11 @@
 import { Link } from "react-router-dom";
+import ProjectImage from "./ProjectImage";
 
 export default function ProjectCard({ project }) {
   return (
     <div className="group rounded-lg border border-line bg-panel overflow-hidden flex flex-col hover:border-copper/60 transition-colors">
       <div className="aspect-[16/10] overflow-hidden border-b border-line">
-        <img
-          src={project.image}
-          alt={`${project.name} illustration`}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
+        <ProjectImage image={project.image} alt={`${project.name} illustration`} className="group-hover:scale-105 transition-transform duration-500" />
       </div>
       <div className="p-6 flex flex-col flex-1">
         <h3 className="font-display font-semibold text-lg">{project.name}</h3>

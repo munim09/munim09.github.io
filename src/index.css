@@ -1,67 +1,111 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Space Grotesk", "Inter", sans-serif;
-  --font-body: "Inter", system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+    --font-display: "Space Grotesk", "Inter", sans-serif;
+    --font-body: "Inter", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, monospace;
 
-  --color-ink: #0b1220;
-  --color-panel: #101b2d;
-  --color-panel-alt: #0e1726;
-  --color-line: #223047;
-  --color-copper: #e8a33d;
-  --color-copper-dim: #b97a2a;
-  --color-teal: #4fd1c5;
-  --color-text: #edeff3;
-  --color-muted: #93a1b8;
+    --color-ink: var(--ink);
+    --color-panel: var(--panel);
+    --color-panel-alt: var(--panel-alt);
+    --color-line: var(--line);
+    --color-copper: var(--copper);
+    --color-copper-dim: var(--copper-dim);
+    --color-teal: var(--teal);
+    --color-text: var(--text);
+    --color-muted: var(--muted);
+    --color-on-accent: var(--on-accent);
+}
+
+:root {
+    color-scheme: light;
+
+    --ink: #f4f6fa;
+    --panel: #ffffff;
+    --panel-alt: #eaeef5;
+    --line: #d9e0ea;
+    /* --copper: #b45309; */
+    --copper: #e16100;
+    --copper-dim: #92400e;
+    /* --teal: #0d6b64; */
+    --teal: #005eff;
+    --text: #0f172a;
+    /* --muted: #1b2434;   */
+    --muted: #393e45;
+    --on-accent: #ffffff;
+
+    --svg-bg: #ffffff;
+    --svg-line: #d9e0ea;
+    --svg-muted: #334155;
+}
+
+.dark {
+    color-scheme: dark;
+
+    --ink: #0b1220;
+    --panel: #101b2d;
+    --panel-alt: #0e1726;
+    --line: #223047;
+    --copper: #e8a33d;
+    --copper-dim: #b97a2a;
+    --teal: #4fd1c5;
+    --text: #edeff3;
+    --muted: #93a1b8;
+    --on-accent: #0b1220;
+
+    --svg-bg: #0b1220;
+    --svg-line: #223047;
+    --svg-muted: #93a1b8;
 }
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-  body {
-    background-color: var(--color-ink);
-    color: var(--color-text);
-    font-family: var(--font-body);
-    -webkit-font-smoothing: antialiased;
-  }
-  ::selection {
-    background: var(--color-copper);
-    color: var(--color-ink);
-  }
-  :focus-visible {
-    outline: 2px solid var(--color-copper);
-    outline-offset: 3px;
-  }
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        background-color: var(--color-ink);
+        color: var(--color-text);
+        font-family: var(--font-body);
+        -webkit-font-smoothing: antialiased;
+    }
+    ::selection {
+        background: var(--color-copper);
+        color: var(--color-on-accent);
+    }
+    :focus-visible {
+        outline: 2px solid var(--color-copper);
+        outline-offset: 3px;
+    }
 }
 
 @layer utilities {
-  .font-display {
-    font-family: var(--font-display);
-  }
-  .font-mono {
-    font-family: var(--font-mono);
-  }
-  .grid-bg {
-    background-image:
-      linear-gradient(to right, var(--color-line) 1px, transparent 1px),
-      linear-gradient(to bottom, var(--color-line) 1px, transparent 1px);
-    background-size: 64px 64px;
-  }
-  .text-copper {
-    color: var(--color-copper);
-  }
-  .text-teal {
-    color: var(--color-teal);
-  }
+    .font-display {
+        font-family: var(--font-display);
+    }
+    .font-mono {
+        font-family: var(--font-mono);
+    }
+    .grid-bg {
+        background-image:
+            linear-gradient(to right, var(--color-line) 1px, transparent 1px),
+            linear-gradient(to bottom, var(--color-line) 1px, transparent 1px);
+        background-size: 64px 64px;
+    }
+    .text-copper {
+        color: var(--color-copper);
+    }
+    .text-teal {
+        color: var(--color-teal);
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.001ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.001ms !important;
-    scroll-behavior: auto !important;
-  }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
 }

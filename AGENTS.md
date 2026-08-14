@@ -24,5 +24,5 @@ No typecheck or test commands exist. Lint is the only CI-like gate.
 - `src/data/projects.js` — project list (title, links, descriptions)
 - `src/pages/` — `Home.jsx`, `ProjectDetail.jsx`, `NotFound.jsx`
 - `src/components/` — section components (Hero, About, Skills, Experience, etc.)
-- `public/projects/` — project images
+- `src/assets/projects/` — project illustration SVGs (inlined via `?raw`, theme-aware) 
 - `public/resume.pdf` — downloadable resume

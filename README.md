@@ -79,4 +79,4 @@ npm run deploy
 - `public/resume.pdf` — replace with your latest resume export (same filename, or update `resumeFile` in `src/data/profile.ts`).
 - `src/data/profile.ts` — update contact info, socials, bio copy as needed.
 - `src/data/projects.ts` — each project has a `live` and `github` link set to placeholders (`"#"` or `https://github.com/munim09`) where a public link isn't available yet. Update these with real URLs.
-- `public/projects/*.svg` — custom illustrations per project; swap for real screenshots if you'd like.
+- `src/assets/projects/*.svg` — custom illustrations per project (inlined and theme-aware via CSS variables); swap for real screenshots if you'd like.
