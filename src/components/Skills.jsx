@@ -9,20 +9,20 @@ export default function Skills() {
         >
             <div className="max-w-6xl mx-auto px-6">
                 <SectionHeading eyebrow="02 / stack" title="Skills" />
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+                <div className="mt-10 divide-y divide-line">
                     {skills.map((group) => (
                         <div
                             key={group.category}
-                            className="rounded-lg border border-line bg-panel p-6"
+                            className="flex flex-col sm:flex-row gap-3 sm:gap-6 py-5"
                         >
-                            <h3 className="font-mono text-sm text-copper mb-4 uppercase tracking-wide">
+                            <span className="font-mono text-sm text-copper uppercase tracking-widest sm:w-48 shrink-0">
                                 {group.category}
-                            </h3>
+                            </span>
                             <div className="flex flex-wrap gap-2">
                                 {group.items.map((item) => (
                                     <span
                                         key={item}
-                                        className="text-sm px-3 py-1.5 rounded-md border border-line text-muted hover:border-teal hover:text-teal transition-colors"
+                                        className="text-sm px-3.5 py-1 rounded-full border border-line text-muted hover:border-copper/40 hover:text-text transition-colors"
                                     >
                                         {item}
                                     </span>
