@@ -67,7 +67,7 @@ This portfolio is deployed to GitHub Pages at [https://munim09.github.io](https:
 
 ```
 git add .
-git commit - m "Commit message"
+git commit -m "Commit message"
 git push -u origin main
 
 npm run deploy

@@ -85,19 +85,26 @@
     .font-mono {
         font-family: var(--font-mono);
     }
-    .grid-bg {
-        background-image:
-            linear-gradient(to right, var(--color-line) 1px, transparent 1px),
-            linear-gradient(to bottom, var(--color-line) 1px, transparent 1px);
-        background-size: 64px 64px;
-    }
     .text-copper {
         color: var(--color-copper);
     }
     .text-teal {
         color: var(--color-teal);
     }
+    .mesh-copper {
+        background: var(--color-copper);
+        opacity: 0.12;
+        filter: blur(220px) brightness(2) saturate(0.3);
+    }
+    .mesh-teal {
+        background: var(--color-teal);
+        opacity: 0.28;
+        filter: blur(220px) brightness(1.6) saturate(0.5);
+    }
 }
+
+.dark .mesh-copper { opacity: 0.14; }
+.dark .mesh-teal { opacity: 0.35; }
 
 @media (prefers-reduced-motion: reduce) {
     *,

@@ -51,9 +51,13 @@ export default function Hero() {
     return (
         <section
             id="home"
-            className="relative pt-22 pb-20 sm:pt-20 sm:pb-18 grid-bg overflow-hidden"
+            className="relative pt-22 pb-20 sm:pt-20 sm:pb-18 overflow-hidden"
         >
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-ink/60 to-ink pointer-events-none" />
+            <div className="absolute inset-0 pointer-events-none overflow-hidden">
+                <div className="mesh-copper absolute top-[-30%] left-[-10%] w-[600px] h-[500px] rounded-full" />
+                <div className="mesh-teal absolute top-[10%] right-[-5%] w-[500px] h-[450px] rounded-full" />
+                <div className="mesh-copper absolute bottom-[-20%] left-[30%] w-[400px] h-[350px] rounded-full" />
+            </div>
             <div className="relative max-w-6xl mx-auto px-6 grid lg:grid-cols-[1.1fr_0.9fr] gap-14 items-center">
                 <div>
                     {/* <p className="font-mono text-xs sm:text-sm text-teal tracking-widest uppercase mb-4">
