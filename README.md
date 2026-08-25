@@ -71,7 +71,7 @@ git commit -m "Commit message"
 git push -u origin main
 
 
-npm run build
+
 npm run deploy
 ```
 
