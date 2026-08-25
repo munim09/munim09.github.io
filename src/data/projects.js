@@ -54,7 +54,6 @@ export const projects = [
             "Add real-time availability updates for concurrent booking attempts.",
         ],
     },
-    ,
     {
         slug: "devpulse",
         name: "DevPulse",
