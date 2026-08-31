@@ -78,21 +78,13 @@ export const experience = [
         period: "Mar 2020 — Present",
         points: [
             "Designed and developed custom reports using BIRT.",
-            "Built the Contractor Management module for the Inventory System using Java, Spring MVC, Hibernate, and Oracle.",
+            "Built the Contractor Management module for the Inventory System using Java, Spring Boot, Hibernate, and Oracle.",
             "Fixed bugs and improved functionality across Inventory and Customer Service Management Systems.",
             "Added new features to the Customer Service System using Java, Spring Boot, JPA, JavaScript, jQuery, and Oracle.",
             "Conducted UAT with banks and MFS providers for the Bill Payment API.",
             "Performed data analysis and built custom reports using Oracle SQL.",
         ],
-        stack: [
-            "Java",
-            "Spring Boot",
-            "Spring MVC",
-            "Hibernate",
-            "JPA",
-            "Oracle SQL",
-            "BIRT",
-        ],
+        stack: ["Java", "Spring Boot", "Hibernate", "Oracle SQL", "BIRT"],
     },
     {
         company: "Commlink Info Tech Ltd",
