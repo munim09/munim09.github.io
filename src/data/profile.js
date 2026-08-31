@@ -80,7 +80,7 @@ export const experience = [
             "Designed and developed custom reports using BIRT.",
             "Built the Contractor Management module for the Inventory System using Java, Spring Boot, Hibernate, and Oracle.",
             "Fixed bugs and improved functionality across Inventory and Customer Service Management Systems.",
-            "Added new features to the Customer Service System using Java, Spring Boot, JPA, JavaScript, jQuery, and Oracle.",
+            "Added new features to the Customer Service System using Java, Spring Boot, JavaScript, jQuery, and Oracle.",
             "Conducted UAT with banks and MFS providers for the Bill Payment API.",
             "Performed data analysis and built custom reports using Oracle SQL.",
         ],
