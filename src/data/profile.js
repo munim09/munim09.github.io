@@ -93,7 +93,7 @@ export const experience = [
         period: "Oct 2015 — Feb 2020",
         points: [
             "Developed Android apps using Android (Java), SQLite, REST APIs, and Firebase.",
-            "Built a Document Management System with Java, Spring MVC, Hibernate, jQuery, and MySQL.",
+            "Built a Document Management System with Java, Hibernate, jQuery, and MySQL.",
             "Implemented serial communication protocols for embedded systems.",
             "Wrote unit tests for legacy C code to improve reliability.",
             "Performed manual testing of Layer 2 and Layer 3 network protocols.",
