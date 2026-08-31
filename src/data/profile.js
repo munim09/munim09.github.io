@@ -48,15 +48,7 @@ export const skills = [
     },
     {
         category: "Tools & Platforms",
-        items: [
-            "Git",
-            "Vercel",
-            "Apache Tomcat",
-            "Ansible",
-            "BIRT",
-            "Linux",
-            "Docker basics",
-        ],
+        items: ["Git", "Vercel", "Apache Tomcat", "Ansible", "BIRT", "Linux"],
     },
 ];
 
