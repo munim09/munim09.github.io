@@ -31,9 +31,7 @@ export const skills = [
         category: "Backend",
         items: [
             "Spring Boot",
-            "Spring MVC",
             "Hibernate ORM",
-            "Spring Data JPA",
             "Node.js",
             "Express",
             "TypeScript",
