@@ -19,8 +19,8 @@ export const projects = [
         ],
         description:
             "A web-based customer service platform built for a utility company, replacing paper workflows with a digital one. Citizens apply for new electricity connections and submit complaints online; field engineers file inspection reports and generate bills directly in the system; and a bill collection module handles payment processing end to end. I worked on the backend services, Oracle SQL reporting, and BIRT-based report generation, alongside fixing and extending the customer service and inventory modules that feed into it.",
-        live: "#",
-        github: "https://github.com/munim09",
+        live: "https://ocsms.desco.org.bd/",
+        github: "",
         challenges: [
             "Reconciling correlated Oracle queries and CONNECT BY hierarchies against inconsistent data across environments.",
             "Coordinating UAT for the Bill Payment API with external banks and mobile financial service providers.",
@@ -40,9 +40,9 @@ export const projects = [
         image: gearRentalSvg,
         stack: ["Node.js", "TypeScript", "Prisma 7", "PostgreSQL"],
         description:
-            "A backend for a gear rental marketplace — think cameras, tools, and outdoor equipment rented peer-to-peer. I designed the full entity-relationship model, wrote the migration SQL and a seed script, and documented the schema for future contributors. The API handles listings, availability, bookings, and deposit tracking, with a reconciliation job that keeps booking and payment-status records consistent.",
-        live: "#",
-        github: "https://github.com/munim09",
+            "A backend for a gear rental marketplace — think cameras, tools, and outdoor equipment rented peer-to-peer. I designed the full entity-relationship model, wrote the migration SQL and a seed script, and documented the schema for future contributors. The API handles listings, availability, bookings, and deposit tracking, with a reconciliation job that keeps booking and payment-status records consistent. The backend source code is available on GitHub at https://github.com/munim09/next-level-gearup",
+        live: "https://next-level-gearup-app-two.vercel.app",
+        github: "https://github.com/munim09/next-level-gearup-app",
         challenges: [
             "Designing a deposit and refund model that works across different rental durations.",
             "Preventing double-bookings when multiple users try to reserve the same item concurrently.",
@@ -63,8 +63,8 @@ export const projects = [
         stack: ["Node.js", "TypeScript", "Express", "PostgreSQL"],
         description:
             "DevPulse is an internal tool for tracking technical issues and feature requests across a small engineering team — lighter than a full project-management suite, focused on fast triage and clear ownership. Built with Express and TypeScript over PostgreSQL, with an emphasis on clean, spec-only documentation so the tool stays easy to hand off and extend.",
-        live: "#",
-        github: "https://github.com/munim09",
+        live: "",
+        github: "https://github.com/munim09/next-level-express-assignment-2",
         challenges: [
             "Keeping the data model simple enough for fast triage while still supporting labels, priority, and ownership.",
             "Writing documentation that stays strictly spec-accurate without drifting into speculative feature notes.",
